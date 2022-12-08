@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
@@ -9,7 +10,6 @@ import {
 } from "@remix-run/react";
 import {
   reconnectProviders,
-  initializeProviders,
   WalletProvider,
   PROVIDER_ID,
   pera,
@@ -37,6 +37,11 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
+  // Reconnect the session when the user returns to the dApp
+  useEffect(() => {
+    reconnectProviders(walletProviders);
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -44,7 +49,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <WalletProvider value={walletProviders}>
+          <Outlet />
+        </WalletProvider>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
