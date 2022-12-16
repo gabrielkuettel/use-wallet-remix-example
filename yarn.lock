@@ -1449,10 +1449,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@txnlab/use-wallet@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@txnlab/use-wallet/-/use-wallet-1.0.2.tgz#d9222acdbf36494db84056bbe56fb74d9b3cf7b6"
-  integrity sha512-cEth1jukn5AbMCVzbi967sud4GRhBSSrNLr9brSqo2zGFNxTCibJVKlczOVlAOPoXnKeD3iXBjphPEfGaScngQ==
+"@txnlab/use-wallet@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@txnlab/use-wallet/-/use-wallet-1.0.4.tgz#e5590294d04261b67cc29b5f37f88605c2c456a7"
+  integrity sha512-z07kOccuUzK+JvraoBN/C6IitrgAOq8JD3R9b6KJaQfoBBC1TjZHj2b6Nd52vXLj1S56Re8OC1qM0/WlBQlL1Q==
   dependencies:
     immer "^9.0.15"
     zustand "^4.1.4"
